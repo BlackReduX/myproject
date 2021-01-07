@@ -1,10 +1,3 @@
-<?php 
-	$imagesDir = 'media/';
-
-	$images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
-
-	$randomImage = $images[array_rand($images)];
-	?>
 <html lang="en" style="background-color: rgb(216, 153, 143);" >
 <head>
     <meta charset="UTF-8">
@@ -20,7 +13,17 @@
     <div class="bg"></div>
 	
     <div class="text">
-	<img src=$randomImage />
+	    
+	<?php 
+	$imagesDir = 'media/';
+
+	$images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
+
+	$randomImage = $images[array_rand($images)];
+
+	echo "<img src=$randomImage />";
+	?>
+	    
     </div>
 </body>
 </html>
