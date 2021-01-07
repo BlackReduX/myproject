@@ -1,5 +1,21 @@
 <html lang="en" style="background-color: rgb(216, 153, 143);" >
-<?php 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/gbtc.ico" />
+    <title>Ayat Emas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <div class="bg"></div>
+	
+    <div class="text">
+	    
+	<?php 
 	function resize_image($file, $w, $h, $crop=FALSE) {
     		list($width, $height) = getimagesize($file);
     		$r = $width / $height;
@@ -26,24 +42,7 @@
 
     		return $dst;
 		}
-?>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="/gbtc.ico" />
-    <title>Ayat Emas</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/js/script.js" defer></script>
-</head>
-<body>
-    <div class="bg"></div>
-	
-    <div class="text">
-	    
-	<?php 
+
 	$imagesDir = 'media/';
 
 	$images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
