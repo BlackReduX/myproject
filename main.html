@@ -11,20 +11,19 @@
 </head>
 <body>
     <div class="bg"></div>
-
+	
     <div class="text">
-    <?php 
-	function RandImg($dir)
-	{
-		$images = glob($dir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
+	
+	<?php 
+	$imagesDir = 'media/';
 
-		$randomImage = $images[array_rand($images)];
-		return $randomImage;
-		}
+	$images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
 
-		$the_image = RandImg('media/');
-		echo $the_image;
+	$randomImage = $images[array_rand($images)];
+	
+	echo "<img src=$randomImage />";
 	?>
+	
     </div>
 </body>
 </html>
