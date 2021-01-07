@@ -1,1 +1,1 @@
-<?php include_once("news.html") ?>
+<?php include_once("main.html") ?>
