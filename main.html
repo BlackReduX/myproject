@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/script.js" defer></script>
 </head>
-<body width = "device-width" >
+<body>
     <div class="bg"></div>
 	
     <div class="text">
@@ -23,7 +23,12 @@
 
 	$randomImage = $images[array_rand($images)];
 
-	echo "<img src=$randomImage ALIGN=CENTER WIDTH=350 HEIGHT=350 BORDER=1 BORDERCOLOR=WHITE />";
+	div.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	echo "<div class="center"> <img src=$randomImage ALIGN=CENTER WIDTH=350 HEIGHT=350 BORDER=1 BORDERCOLOR=WHITE /> </div>";
 	?>
 	    
     </div>
