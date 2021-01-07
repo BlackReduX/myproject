@@ -11,10 +11,7 @@
     <script src="/js/script.js" defer></script>
 </head>
 <body>
-    <div class="bg"></div>
 	
-    <div class="text">
-	    
 	<?php 
 
 	$imagesDir = 'media/';
@@ -22,20 +19,10 @@
 	$images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
 
 	$randomImage = $images[array_rand($images)];
-	
-	<style type="text/css">
-	.center {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	  width: 50%;
-	}
-	</style>
 
-	echo "<img src=$randomImage WIDTH=350 HEIGHT=350 BORDER=1 BORDERCOLOR=WHITE alt="Ayat Emas" class="center" />";
+	echo "<img src=$randomImage WIDTH=350 HEIGHT=350 BORDER=1 BORDERCOLOR=WHITE alt="Ayat Emas"/>";
 	
 	?>
 	    
-    </div>
 </body>
 </html>
