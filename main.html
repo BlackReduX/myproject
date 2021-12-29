@@ -1,32 +1,13 @@
 <html lang="en" >
 <head>
 	<style type="text/css">
-	.hgd-hero-home-bg-image {
-
- 	 background-image: url("bg2.jpg");
-	 background-repeat: no-repeat;
-	 background-position: center center;
-	 background-size: cover;
-	}
-
-	@media screen and (min-width: 768px) {
-	.hgd-hero-home-bg-image {
-
-	 background-image: url("bg2.jpg");
-	 background-repeat: no-repeat;
-	 background-position: center center;
-	 background-size: cover;
-	 }
-	}
-
-	@media screen and (min-width: 1025px) {
-	.hgd-hero-home-bg-image {
-
-	 background-image: url("bg.jpg");
-	 background-repeat: no-repeat;
-	 background-position: center center;
-	 background-size: cover;
-	 }
+		.container {
+    		background-image: url('bg2.jpg');
+		}
+	@media (min-width: 1024px) {
+    	.container {
+        	background-image: url('bg.jpg');
+    		}
 	}
 	</style>
     <meta charset="UTF-8">
@@ -40,6 +21,8 @@
     <script src="/js/script.js" defer></script>
 </head>
 <body>
+	<div class="container"></div>
+
 	<div ALIGN=Center>
 		<img src="/gbtc.png" WIDTH=110 HEIGHT=110>
 	</div>
