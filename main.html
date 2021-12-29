@@ -12,16 +12,13 @@
     <script src="/js/script.js" defer></script>
 </head>
 <body>
-	.container {
-    		background-image: url('bg2.jpg');
-		}
-	}
-	@media (min-width: 1024px) {
-    	.container {
-        	background-image: url('bg.jpg');
-    		}
-	}
-	<div class="container"></div>
+	<img srcset="bg2.jpg 320w,
+             	bg2.jpg 480w,
+             	bg.jpg 800w"
+     	sizes="(max-width: 320px) 280px,
+            	(max-width: 480px) 440px,
+            	800px"
+     	src="bg.jpg" >
 	<div ALIGN=Center>
 		<img src="/gbtc.png" WIDTH=110 HEIGHT=110>
 	</div>
