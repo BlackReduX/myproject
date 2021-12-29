@@ -10,6 +10,34 @@ body{
     height: 100%;
 }
 
+.hgd-hero-home-bg-image {
+
+ background-image: url("bg2.jpg");
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+.hgd-hero-home-bg-image {
+
+ background-image: url("bg2.jpg");
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ }
+}
+
+@media screen and (min-width: 1025px) {
+.hgd-hero-home-bg-image {
+
+ background-image: url("bg.jpg");
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ }
+}
+
 .text{/* Black w/opacity/see-through */
     color: white;
     font-weight: bold;
