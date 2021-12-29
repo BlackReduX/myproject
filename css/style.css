@@ -28,30 +28,3 @@ body{
   }
 }
 
-
-.text{/* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    margin: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    padding: 20px;
-    text-align: center;
-}
-
-.gambar{
-    max-width: 100%;
-    height: auto;
-}
-
-@media screen and (max-width: 600px){
-    .gambar{
-        max-width: 150%;
-    }
-    .text{
-        left: 35%;
-    }
-}
